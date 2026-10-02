@@ -1,0 +1,15 @@
+#include<stdio.h>
+void main(){
+    int a[] = {10,11,-5,35,64,74,4};
+    int *p,*q;
+    p=a;
+    printf("%d\n",*p);
+    printf("%d %d %d\n",(*p)++, *p++, *++p);
+    printf("%d\n",*p);
+    q=p+3;
+    printf("%d\n",*q-3);
+    printf("%d\n",*--p+5);
+    printf("%d\n",*p+*q);
+    printf("%d\n",&a);
+    printf("%d\n",&p);
+}
